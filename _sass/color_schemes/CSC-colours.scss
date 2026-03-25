@@ -45,3 +45,10 @@ a:hover {
   color: #7477b8 !important;
   text-decoration: underline;
 }
+
+// 5. Logo size
+.site-logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 180px; // Adjust this to make it look bigger/smaller
+}
