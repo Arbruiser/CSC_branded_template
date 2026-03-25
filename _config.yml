@@ -5,10 +5,8 @@ theme: just-the-docs
 logo: "CSC_logo.svg"
 logo_link: "https://csc.fi/en/"
 color_scheme: CSC-colours
-url: "https://arbruiser.github.io/CSC-branded-template"
 
 # Navigation & Search
-search_enabled: true
 heading_anchors: true      # Makes it easy for people to link to specific sections
 aux_links:
   "Main Company Site": "https://csc.fi"
@@ -16,5 +14,10 @@ aux_links:
 
 # This helps experts! It adds an "Edit this page on GitHub" link to every lesson
 gh_edit_repository: "https://github.com/Arbruiser/CSC-branded-template"
+gh_edit_view_mode: "tree"
+gh_edit_branch: "main"
+
+# Points to the correct fork automatically!
+gh_edit_repository: "https://github.com/{{ site.github.repository_nwo }}"
 gh_edit_view_mode: "tree"
 gh_edit_branch: "main"
