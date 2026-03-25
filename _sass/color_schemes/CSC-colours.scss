@@ -1,28 +1,28 @@
-// _sass/color_schemes/CSC-colours.scss
-$lumi-blue: #2c6789;
-$lumi-purple: #7477b8;
-$lumi-magenta: #ec008c;
+// Main colours
+$body-background-color: #ffffff;
+$sidebar-color: #ffffff;
+$body-text-color: #231f20;
+$sidebar-text-color: #231f20;
 
-// Merge them with Just‑the‑Docs’ callout color map
-$callout-colors: map-merge($callout-colors,
-  (
-    "lumi-blue": (
-      border: $lumi-blue,
-      background: mix($lumi-blue, #ffffff, 12%),
-      title: $body-text-color,
-      text:  $body-text-color
-    ),
-    "lumi-purple": (
-      border: $lumi-purple,
-      background: mix($lumi-purple, #ffffff, 12%),
-      title: $body-text-color,
-      text:  $body-text-color
-    ),
-    "lumi-magenta": (
-      border: $lumi-magenta,
-      background: mix($lumi-magenta, #ffffff, 12%),
-      title: $body-text-color,
-      text:  $body-text-color
-    )
-  )
-);
+// Additional colours & Effect
+$brand-color: #2c6789;       // Blue
+$link-color: #2c6789;        // Blue
+$nav-child-link-color: #7477b8; // Purple
+
+// Callout Boxes (Note, Tip, Warning)
+// Using white backgrounds to keep it strictly within the palette
+$feedback-info-color: #2c6789;    // Blue (Note)
+$feedback-info-color-light: #ffffff; 
+
+$feedback-warning-color: #7477b8; // Purple (Tip)
+$feedback-warning-color-light: #ffffff;
+
+$feedback-error-color: #ec008c;   // Magenta (Warning)
+$feedback-error-color-light: #ffffff;
+
+$feedback-success-color: #2c6789;
+$feedback-success-color-light: #ffffff;
+
+// UI Elements
+$border-color: #231f20; // Using the Black for lines
+$btn-primary-color: #2c6789;
