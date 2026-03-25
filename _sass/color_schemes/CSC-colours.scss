@@ -1,59 +1,47 @@
-// 1. Core Variables (Keep these for the UI/Sidebar)
+// 1. Core Brand Colors
 $body-background-color: #ffffff;
 $sidebar-color: #ffffff;
 $body-text-color: #231f20;
-$sidebar-text-color: #231f20;
-$brand-color: #2c6789;
-$link-color: #2c6789;
-$nav-child-link-color: #7477b8;
-$border-color: #231f20;
-$btn-primary-color: #2c6789;
+$brand-color: #2c6789;        // Blue
+$link-color: #2c6789;         // Blue
+$nav-child-link-color: #7477b8; // Purple (Accents)
 
-// 2. Callout Box Variables
-$feedback-info-color: #2c6789;
-$feedback-warning-color: #7477b8;
-$feedback-error-color: #ec008c;
-
-// 3. Direct CSS Overrides 
-// This forces the bars to show the LUMI colors regardless of theme defaults
+// 2. The "Two-Box" System
+// Note/Info (Blue)
 .note {
-  border-left-color: $feedback-info-color !important;
-  background-color: #ffffff !important;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border: 1px solid #231f20;
+  border-left: 6px solid #2c6789;
+  background-color: #ffffff;
 }
 
-.tip {
-  border-left-color: $feedback-warning-color !important;
-  background-color: #ffffff !important;
-}
-
+// Warning/Alert (Magenta)
 .warning {
-  border-left-color: $feedback-error-color !important;
-  background-color: #ffffff !important;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border: 1px solid #231f20;
+  border-left: 6px solid #ec008c;
+  background-color: #ffffff;
 }
 
-
-// make shapes for notes, tips, warnings
-.note, .tip, .warning {
-  padding: 1.25rem;           // Adds space inside the box
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #231f20;  // Thin Black border to define the box shape
-  border-left-width: 6px;     // Thick branded bar on the left
-  background-color: #ffffff !important; 
+// 3. Repurposing Purple for Technical Elements
+// This styles code like `this`
+code {
+  color: #7477b8 !important;
+  background-color: #f5f5f5; // Slight light gray for legibility
+  padding: 2px 4px;
   border-radius: 3px;
+  font-family: monospace;
 }
 
-// Map the border colors to your palette
-.note { border-left-color: #2c6789 !important; }    // Blue
-.tip { border-left-color: #7477b8 !important; }     // Purple
-.warning { border-left-color: #ec008c !important; } // Magenta
+// Styling for code blocks (the big ones)
+.language-bash, .language-python, .highlight {
+  border: 1px solid #7477b8 !important;
+}
 
-// Ensure titles inside boxes are bold and black
-.note-title, .tip-title, .warning-title {
-  display: block;
-  font-weight: bold;
-  color: #231f20;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  font-size: 0.85rem;
+// 4. Hover Effects (The "Interactive" Purple)
+a:hover {
+  color: #7477b8 !important;
+  text-decoration: underline;
 }

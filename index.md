@@ -14,15 +14,19 @@ This site is pre-configured with the LUMI AI Factory palette. You can use specia
 
 {: .note }
 > **LUMI Blue (Note)**
-> Use this for general information or "did you know" facts.
-
-{: .tip }
-> **LUMI Purple (Tip)**
-> Use this for helpful shortcuts or expert advice.
+> Use this for additional context, "Deep Dives," or general helpful information.
 
 {: .warning }
-> **LUMI Magenta (Important)**
-> Use this for critical warnings or common mistakes to avoid.
+> **LUMI Magenta (Warning)**
+> Use this for critical warnings, security notices, or common errors to avoid.
+
+---
+
+## 💻 Technical Content
+When writing technical details or commands, use the **LUMI Purple** accent:
+
+* **Inline Commands:** Use backticks to show code like `srun --pty bash`.
+* **Sidebar Links:** Navigation links will turn Purple when you hover over them.
 
 ---
 
