@@ -1,8 +1,19 @@
-// _sass/color_schemes/CSC-colours.scss
-$brand-color: #006391;
-$link-order: #0073af;
-$sidebar-color: #f5f6f7;
-$feedback-info-color: #006391;
-$feedback-warning-color: #f39c12;
-$feedback-error-color: #c0392b;
-$feedback-success-color: #27ae60;
+// 1. Core Brand Colors (LUMI AI Factory)
+$brand-color: #2c6789;       // LUMI Blue (Primary)
+$link-color: #2c6789;        // LUMI Blue
+$body-background-color: #ffffff;
+$sidebar-color: #ffffff;     // Clean White sidebar
+$sidebar-color-dark: #000000; // Black for dark mode support
+
+// 2. Navigation & UI
+$nav-child-link-color: #7477b8; // LUMI Purple (Secondary)
+$btn-primary-color: #2c6789;    // LUMI Blue
+
+// 3. Feedback & Effect Colors
+$feedback-info-color: #2c6789;    // Blue for "Note" boxes
+$feedback-warning-color: #7477b8; // Purple for "Tip" boxes
+$feedback-error-color: #ec008c;   // Magenta for "Warning/Alert" (Effect Color)
+$feedback-success-color: #2c6789; // Keeping it Blue for consistency
+
+// 4. Borders & Lines
+$border-color: #eeeeee;
