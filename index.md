@@ -25,8 +25,6 @@ This site is pre-configured with the LUMI AI Factory palette. You can use specia
 ---
 
 ## 💻 Technical Content
-When writing technical details or commands, use the **LUMI Blue** accent:
-
 * **Inline Commands:** Use backticks to show code like `srun --pty bash`.
 * **Sidebar Links:** Navigation links will turn Purple when you hover over them.
 
