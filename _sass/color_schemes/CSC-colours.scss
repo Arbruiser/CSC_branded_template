@@ -1,3 +1,28 @@
+// _sass/color_schemes/CSC-colours.scss
 $lumi-blue: #2c6789;
 $lumi-purple: #7477b8;
 $lumi-magenta: #ec008c;
+
+// Merge them with Just‑the‑Docs’ callout color map
+$callout-colors: map-merge($callout-colors,
+  (
+    "lumi-blue": (
+      border: $lumi-blue,
+      background: mix($lumi-blue, #ffffff, 12%),
+      title: $body-text-color,
+      text:  $body-text-color
+    ),
+    "lumi-purple": (
+      border: $lumi-purple,
+      background: mix($lumi-purple, #ffffff, 12%),
+      title: $body-text-color,
+      text:  $body-text-color
+    ),
+    "lumi-magenta": (
+      border: $lumi-magenta,
+      background: mix($lumi-magenta, #ffffff, 12%),
+      title: $body-text-color,
+      text:  $body-text-color
+    )
+  )
+);
