@@ -14,7 +14,7 @@ $feedback-info-color: #2c6789;
 $feedback-warning-color: #7477b8;
 $feedback-error-color: #ec008c;
 
-// 3. THE FIX: Direct CSS Overrides 
+// 3. Direct CSS Overrides 
 // This forces the bars to show the LUMI colors regardless of theme defaults
 .note {
   border-left-color: $feedback-info-color !important;
@@ -31,7 +31,27 @@ $feedback-error-color: #ec008c;
   background-color: #ffffff !important;
 }
 
-// Optional: Make the bold titles match the brand colors too
-.note-title { color: $feedback-info-color !important; }
-.tip-title { color: $feedback-warning-color !important; }
-.warning-title { color: $feedback-error-color !important; }
+.note, .tip, .warning {
+  padding: 1.25rem;           // Adds space inside the box
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #231f20;  // Thin Black border to define the box shape
+  border-left-width: 6px;     // Thick branded bar on the left
+  background-color: #ffffff !important; 
+  border-radius: 3px;
+}
+
+// Map the border colors to your palette
+.note { border-left-color: #2c6789 !important; }    // Blue
+.tip { border-left-color: #7477b8 !important; }     // Purple
+.warning { border-left-color: #ec008c !important; } // Magenta
+
+// Ensure titles inside boxes are bold and black
+.note-title, .tip-title, .warning-title {
+  display: block;
+  font-weight: bold;
+  color: #231f20;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
