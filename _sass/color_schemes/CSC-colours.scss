@@ -1,54 +1,59 @@
-// 1. Core Brand Colors
-$body-background-color: #ffffff;
-$sidebar-color: #ffffff;
-$body-text-color: #231f20;
-$brand-color: #2c6789;        // Blue
-$link-color: #2c6789;         // Blue
-$nav-child-link-color: #7477b8; // Purple (Accents)
+// 1. Core Palette
+$brand-color: #2c6789;        // LUMI Blue
+$link-color: #2c6789;         // LUMI Blue
+$nav-child-link-color: #7477b8; // LUMI Purple
+$body-text-color: #231f20;    // CSC Black
 
-// 2. The "Two-Box" System
-// Note/Info (Blue)
-.note {
-  margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  border: 1px solid #231f20;
-  border-left: 6px solid #2c6789;
-  background-color: #ffffff;
+// 2. Logo & Header Fix
+// We force the container to be taller and allow the logo to expand
+.site-header {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2rem !important;
+  border-bottom: 2px solid #7477b8 !important; // Branded Purple line under logo
 }
 
-// Warning/Alert (Magenta)
-.warning {
-  margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  border: 1px solid #231f20;
-  border-left: 6px solid #ec008c;
-  background-color: #ffffff;
+.site-title img, .site-logo {
+  display: block !important;
+  max-width: 230px !important;  // Increased from 180px
+  height: auto !important;
+  max-height: 120px !important; // Overrides the theme's tiny height limit
 }
 
-// 3. Repurposing Purple for Technical Elements
-// This styles code like `this`
+// 3. The "Two-Box" System
+.note, .warning {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #231f20;
+  border-left-width: 8px;      // Slightly thicker for a modern look
+  background-color: #ffffff;
+}
+.note { border-left-color: #2c6789 !important; }
+.warning { border-left-color: #ec008c !important; }
+
+// 4. Repurposing Purple for "Interface Accents"
+// Active Page in Sidebar
+.nav-list-item.active > .nav-list-link {
+  color: #7477b8 !important;
+  font-weight: bold;
+}
+
+// Primary Buttons (Use Purple for "Actions")
+.btn-primary {
+  background-color: #7477b8 !important;
+  border-color: #7477b8 !important;
+}
+
+// Technical Code Accents
 code {
   color: #7477b8 !important;
-  background-color: #f5f5f5; // Slight light gray for legibility
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-family: monospace;
+  background-color: #f5f5f5;
+  padding: 2px 5px;
+  border-radius: 4px;
 }
 
-// Styling for code blocks (the big ones)
-.language-bash, .language-python, .highlight {
-  border: 1px solid #7477b8 !important;
-}
-
-// 4. Hover Effects (The "Interactive" Purple)
-a:hover {
-  color: #7477b8 !important;
-  text-decoration: underline;
-}
-
-// 5. Logo size
-.site-logo {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 180px; // Adjust this to make it look bigger/smaller
+// Purple Horizontal Rules to separate sections
+hr {
+  border: 0;
+  border-top: 1px solid #7477b8;
+  opacity: 0.2;
 }
