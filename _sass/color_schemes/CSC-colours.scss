@@ -1,28 +1,18 @@
-// _sass/color_schemes/CSC-colours.scss
-$lumi-blue: #2c6789;
-$lumi-purple: #7477b8;
-$lumi-magenta: #ec008c;
+$lumi-blue-000: #ffffff;
+$lumi-blue-100: #ffffff;
+$lumi-blue-200: #2c6789;
+$lumi-blue-300: #2c6789;
 
-// Merge them with Just‑the‑Docs’ callout color map
-$callout-colors: map-merge($callout-colors,
-  (
-    "lumi-blue": (
-      border: $lumi-blue,
-      background: mix($lumi-blue, #ffffff, 12%),
-      title: $body-text-color,
-      text:  $body-text-color
-    ),
-    "lumi-purple": (
-      border: $lumi-purple,
-      background: mix($lumi-purple, #ffffff, 12%),
-      title: $body-text-color,
-      text:  $body-text-color
-    ),
-    "lumi-magenta": (
-      border: $lumi-magenta,
-      background: mix($lumi-magenta, #ffffff, 12%),
-      title: $body-text-color,
-      text:  $body-text-color
-    )
-  )
-);
+$lumi-purple-000: #ffffff;
+$lumi-purple-100: #ffffff;
+$lumi-purple-200: #7477b8;
+$lumi-purple-300: #7477b8;
+
+$lumi-magenta-000: #ffffff;
+$lumi-magenta-100: #ffffff;
+$lumi-magenta-200: #ec008c;
+$lumi-magenta-300: #ec008c;
+
+// Make the callout text use your standard body colour
+$callout-title-color: $body-text-color;
+$callout-text-color:  $body-text-color;
