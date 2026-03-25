@@ -4,7 +4,7 @@ title: CSC Learning Materials
 nav_exclude: true
 ---
 
-# CSC & LUMI AI Factory Learning Template
+# CSC Learning Template
 This is the official template for creating clean, branded self-learning course sites. By using this template, you ensure that your training materials match the **CSC** and **LUMI AI Factory** visual identity automatically.
 
 ---

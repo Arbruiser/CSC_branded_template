@@ -7,6 +7,7 @@ logo_link: "https://csc.fi/en/"
 color_scheme: CSC-colours
 
 # Navigation & Search
+search_enabled: false
 heading_anchors: true      # Makes it easy for people to link to specific sections
 aux_links:
   "CSC Website": "https://csc.fi"
@@ -15,5 +16,3 @@ aux_links:
 gh_edit_repository: "https://github.com/{{ site.github.repository_nwo }}"
 gh_edit_view_mode: "tree"
 gh_edit_branch: "main"
-
-search_enabled: false
