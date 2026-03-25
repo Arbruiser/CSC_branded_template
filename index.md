@@ -14,10 +14,12 @@ This site is pre-configured with the LUMI AI Factory palette. You can use specia
 
 {: .note }
 > **LUMI Blue (Note)**
+>
 > Use this for additional context, "Deep Dives," or general helpful information.
 
 {: .warning }
 > **LUMI Magenta (Warning)**
+>
 > Use this for critical warnings, security notices, or common errors to avoid.
 
 ---
