@@ -1,44 +1,28 @@
-/* 1. Branded colours (only the ones you already use) */
-$csc-white:   #ffffff;
-$csc-black:   #231f20;
-$csc-blue:    #2c6789;
-$csc-purple:  #7477b8;
-$csc-magenta: #ec008c;
+// _sass/color_schemes/CSC-colours.scss
+$lumi-blue: #2c6789;
+$lumi-purple: #7477b8;
+$lumi-magenta: #ec008c;
 
-/* 2. Hook those colours into the Just-the-Docs families */
-$blue-000: $csc-white;
-$blue-100: $csc-white;
-$blue-200: $csc-blue;
-$blue-300: $csc-blue;
-
-$purple-000: $csc-white;
-$purple-100: $csc-white;
-$purple-200: $csc-purple;
-$purple-300: $csc-purple;
-
-$pink-000: $csc-white;
-$pink-100: $csc-white;
-$pink-200: $csc-magenta;
-$pink-300: $csc-magenta;
-
-/* 3. Rest of the palette uses the same csc- variables */
-$body-background-color: $csc-white;
-$sidebar-color: $csc-white;
-$body-text-color: $csc-black;
-$sidebar-text-color: $csc-black;
-
-$brand-color: $csc-blue;
-$link-color: $csc-blue;
-$nav-child-link-color: $csc-purple;
-
-$feedback-info-color: $csc-blue;
-$feedback-info-color-light: $csc-white;
-$feedback-warning-color: $csc-purple;
-$feedback-warning-color-light: $csc-white;
-$feedback-error-color: $csc-magenta;
-$feedback-error-color-light: $csc-white;
-$feedback-success-color: $csc-blue;
-$feedback-success-color-light: $csc-white;
-
-$border-color: $csc-black;
-$btn-primary-color: $csc-blue;
+// Merge them with Just‑the‑Docs’ callout color map
+$callout-colors: map-merge($callout-colors,
+  (
+    "lumi-blue": (
+      border: $lumi-blue,
+      background: mix($lumi-blue, #ffffff, 12%),
+      title: $body-text-color,
+      text:  $body-text-color
+    ),
+    "lumi-purple": (
+      border: $lumi-purple,
+      background: mix($lumi-purple, #ffffff, 12%),
+      title: $body-text-color,
+      text:  $body-text-color
+    ),
+    "lumi-magenta": (
+      border: $lumi-magenta,
+      background: mix($lumi-magenta, #ffffff, 12%),
+      title: $body-text-color,
+      text:  $body-text-color
+    )
+  )
+);
