@@ -128,36 +128,3 @@ div.highlighter-rouge {
     }
   }
 }
-
-// 6. Copy Button Styling (Specific to Just the Docs)
-// We target the button AND the SVG icon inside it
-button.copy-button, button.btn-copy {
-  position: absolute !important;
-  top: 0.75rem !important;
-  right: 0.75rem !important;
-  z-index: 10 !important;
-
-  // Button background and border
-  background-color: $white !important;
-  border: 1px solid $csc-blue !important;
-  border-radius: 4px !important;
-  padding: 5px !important;
-  cursor: pointer !important;
-  display: flex !important;
-
-  // FORCE the icon color to CSC Blue
-  svg, path {
-    fill: $csc-blue !important;
-    color: $csc-blue !important; // Some themes use color for SVGs
-  }
-
-  &:hover {
-    background-color: $csc-blue !important;
-    border-color: $csc-blue !important;
-    
-    svg, path {
-      fill: $white !important;
-      color: $white !important;
-    }
-  }
-}
