@@ -62,15 +62,15 @@ div.highlighter-rouge {
 
 // 6. The "CSC Asymptote" Corners
 
-body::after {
+html::before {
   content: "";
   position: fixed;
   top: 0;
+  bottom: 0; 
   left: 0;
-  width: 100%;  // 100% ignores the address bar jumping glitch
-  height: 100%; 
-  z-index: -1;  // Sits securely behind the text
-  pointer-events: none;
+  right: 0;
+  z-index: -999;
+  background-color: #ffffff;
   background-size: min(10vw, 150px), min(10vw, 150px);
   
   // Scaled down to 350px and set to 100% opacity (solid)
@@ -82,32 +82,29 @@ body::after {
     
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
-  
-  // Forces a minimum size of 100px on phones, scales up gracefully, caps at 350px
-  background-size: clamp(100px, 25vw, 350px), clamp(100px, 25vw, 350px);
 }
 
-// 2. Strip ALL theme backgrounds completely 
-html, body, .main, .main-content, .main-content-wrap {
+// Strip ALL theme backgrounds completely 
+html, body, .main, .main-content, .main-content-wrap, .main-header {
   background: transparent !important;
   background-color: transparent !important;
+  border-bottom: none !important;
 }
 
-// 3. The Sidebar (Desktop) AND Mobile Header (Phone)
-// We must make the mobile header transparent so it doesn't hide the blue corner!
-.side-bar, .site-header {
+// The Sidebar (Crystal clear background)
+.side-bar {
   background: transparent !important; 
-  background-color: transparent !important; 
+  background-color: transparent !important; // <-- Removed the 0.6 white veil!
   border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
 
-// 4. Inner Sidebar/Header Elements
-.site-title, .site-nav, .site-footer, .search {
+// Inner Sidebar Elements 
+.site-header, .site-title, .site-nav, .site-footer, .search {
   background: transparent !important;
   background-color: transparent !important;
 }
 
-// 5. Top-right "Pill" Button (Desktop only)
+// Top-right "Pill" Button
 .aux-nav-list-item a {
   background-color: rgba($csc-blue, 0.05) !important;
   padding: 6px 15px !important;
