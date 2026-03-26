@@ -57,3 +57,67 @@ div.highlighter-rouge {
     margin: 0 !important;
   }
 }
+
+
+
+// 7. Visual Structure (The "CSC Asymptote" Corners)
+
+// 1. Create a fixed canvas for the corner branding
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -999;
+  background-color: #ffffff;
+  
+  // We draw the swooping lines using Inline SVG directly in the CSS!
+  background-image: 
+    /* TOP RIGHT: Blue Asymptote */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3Cpath d='M 0,0 Q 340,15 350,350 Q 315,15 0,25 Z' fill='%232c6789' opacity='0.35'/%3E%3C/svg%3E"),
+    /* BOTTOM LEFT: Magenta Asymptote */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3Cpath d='M 0,0 Q 15,340 350,350 Q 15,315 25,0 Z' fill='%23ec008c' opacity='0.35'/%3E%3C/svg%3E");
+    
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, no-repeat;
+}
+
+// 2. Strip ALL theme backgrounds completely
+html, body, .main, .main-content, .main-content-wrap, .main-header {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+// 3. The Sidebar (Kept glassy so the bottom-left magenta line shows through)
+.side-bar {
+  background: transparent !important; 
+  background-color: rgba(255, 255, 255, 0.4) !important; 
+  backdrop-filter: blur(10px); 
+  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+// 4. Inner Sidebar Elements (Must be transparent)
+.site-header, .site-title, .site-nav, .site-footer, .search {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+// 5. Top-right "Pill" Button
+.aux-nav-list-item a {
+  background-color: rgba($csc-blue, 0.05) !important;
+  padding: 6px 15px !important;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid rgba($csc-blue, 0.1);
+
+  &:hover {
+    background-color: $csc-blue !important;
+    color: $white !important;
+    text-decoration: none !important;
+  }
+}
