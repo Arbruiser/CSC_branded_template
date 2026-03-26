@@ -58,35 +58,43 @@ div.highlighter-rouge {
   }
 }
 
-// 7. Visual Structure (The "Static CSC Glow")
+// 7. Visual Structure (The "True Edge CSC Glow")
 
-// 1. Apply the static glow to the absolute base of the website
-html {
-  background: 
-    radial-gradient(circle at 0% 100%, rgba($csc-blue, 0.25), transparent 75%),    
-    radial-gradient(circle at 100% 0%, rgba($csc-magenta, 0.08), transparent 50%), 
-    #ffffff !important;
-  background-attachment: fixed !important;
+// 1. Create a fixed viewport canvas that ignores theme layouts
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -999; // Deepest layer possible
+  background-color: #ffffff;
+  background-image: 
+    // Using vw/vh forces the glow to the absolute monitor corners
+    radial-gradient(circle at 0vw 100vh, rgba($csc-blue, 0.30), transparent 70vw),    
+    radial-gradient(circle at 100vw 0vh, rgba($csc-magenta, 0.08), transparent 50vw);
 }
 
-// 2. Force ALL structural wrappers to be completely transparent
-body, .main, .main-content, .main-content-wrap, .main-header {
+// 2. Strip ALL theme backgrounds completely
+html, body, .main, .main-content, .main-content-wrap, .main-header {
   background: transparent !important;
   background-color: transparent !important;
   border-bottom: none !important;
 }
 
-// 3. The Sidebar "Frosted Glass"
+// 3. The Sidebar (Made even more "glassy" to let blue through)
 .side-bar {
-  background-color: rgba(255, 255, 255, 0.3) !important; 
+  background: transparent !important; // Clears any theme defaults
+  background-color: rgba(255, 255, 255, 0.1) !important; // Barely-there white
   backdrop-filter: blur(12px); 
   border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
 
-// 4. THE FIX: Strip the solid white from the sidebar's inner elements
+// 4. Inner Sidebar Elements (Must be transparent)
 .site-header, .site-title, .site-nav, .site-footer, .search {
-  background-color: transparent !important;
   background: transparent !important;
+  background-color: transparent !important;
 }
 
 // 5. Top-right "Pill" Button
@@ -102,5 +110,6 @@ body, .main, .main-content, .main-content-wrap, .main-header {
   &:hover {
     background-color: $csc-blue !important;
     color: $white !important;
+    text-decoration: none !important;
   }
 }
