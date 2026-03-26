@@ -21,11 +21,18 @@ $nav-child-link-color: $csc-purple;
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
   border: 1px solid $csc-black;
-  background-color: $slightly-grey;
   blockquote { margin: 0; border-left: none; padding: 0; color: inherit; }
 }
-.note { border-left: 6px solid $csc-purple; }
-.warning { border-left: 6px solid $csc-magenta; }
+
+.note { 
+  border-left: 6px solid $csc-purple; 
+  background-color: #f6f6fb; // Very faint Purple
+}
+
+.warning { 
+  border-left: 6px solid $csc-magenta; 
+  background-color: #fff5f9; // Very faint Magenta
+}
 
 
 // 4. Inline & Interactive Elements
