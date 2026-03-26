@@ -65,12 +65,6 @@ $nav-child-link-color: $csc-purple;
   margin: 1.5rem 0;
   padding: 1rem;
 
-  position: relative;
-  width: fit-content;      
-  min-width: 450px;        // Space for the button and short code
-  max-width: 100%;
-  padding-right: 3rem;  
-
   // This clears the styling from the tags INSIDE the highlight box
   pre {
     margin: 0;
@@ -103,107 +97,15 @@ iframe {
 }
 
 // 6. Copy Button Styling
-.copy-button {
-  // 1. Positioning: Forces it into the top-right of the .highlight box
-  position: absolute !important;
-  top: 0.75rem !important;
-  right: 0.75rem !important;
-  z-index: 10;
-
-  // 2. Branding
+.btn-copy {
   background-color: $white !important;
+  color: $csc-blue !important;
   border: 1px solid $csc-blue !important;
-  border-radius: 4px !important;
-  padding: 4px !important;
-  display: flex !important; // Centers the icon
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-
-  // 3. Icon Color (SVG)
-  svg {
-    fill: $csc-blue !important; 
-    width: 16px;
-    height: 16px;
-  }
+  border-radius: 4px;
 
   &:hover {
     background-color: $csc-blue !important;
-    
-    svg {
-      fill: $white !important; // Icon turns white on hover
-    }
-  }
-}
-
-
-
-
-// 4. Code & Technical Elements (Unified Block)
-
-// This targets the outermost container created by Jekyll
-.highlighter-rouge {
-  position: relative;      // Anchors the copy button
-  margin: 1.5rem 0;
-  width: fit-content;      // Shrinks the whole block to the code width
-  min-width: 450px;        // Ensures enough room for the button
-  max-width: 100%;
-  background-color: #f9f9f9; 
-  border: 1px solid $csc-purple; // Branded border
-  border-radius: 6px;
-
-  // The actual highlighted code area inside
-  .highlight {
-    margin: 0;
-    padding: 1rem;
-    padding-right: 3.5rem; // Safe zone for the button
-    background-color: transparent !important;
-    border: none !important;
-
-    pre {
-      margin: 0;
-      padding: 0;
-      background-color: transparent !important;
-      border: none !important;
-    }
-
-    code {
-      background-color: transparent !important;
-      padding: 0 !important;
-      color: $csc-black !important;
-    }
-  }
-}
-
-// 6. Copy Button Styling (Specific to Just the Docs)
-// Using both .copy-button and .btn-copy to be 100% sure we catch it
-.copy-button, .btn-copy {
-  position: absolute !important;
-  top: 0.75rem !important;
-  right: 0.75rem !important;
-  z-index: 10;
-
-  // Branding
-  background-color: $white !important;
-  border: 1px solid $csc-blue !important;
-  border-radius: 4px !important;
-  padding: 5px !important;
-  cursor: pointer;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-
-  // Force the icon color
-  svg {
-    fill: $csc-blue !important;
-    width: 16px !important;
-    height: 16px !important;
-  }
-
-  &:hover {
-    background-color: $csc-blue !important;
-    svg {
-      fill: $white !important;
-    }
+    color: $white !important;
+    text-decoration: none !important; // Keeps it clean on hover
   }
 }
