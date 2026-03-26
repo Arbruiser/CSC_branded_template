@@ -90,6 +90,8 @@ a:hover {
 // 5. Video Styling 
 iframe {
   width: 100% !important;
+  max-width: 850px;       // Prevents the video from getting "too wide"
+  display: block;         // Allows centering
   aspect-ratio: 16 / 9;
   border: 1px solid $csc-black;
   border-radius: 6px;
