@@ -4,7 +4,7 @@ theme: just-the-docs
 
 logo: "CSC_logo.svg"
 logo_link: "https://csc.fi/en/"
-color_scheme: CSC-colours
+color_scheme: CSC-colors
 
 # Navigation & Search
 search_enabled: false

@@ -1,0 +1,25 @@
+// CSC & LUMI AI Factory Color Palette
+$csc-blue:    #2c6789;
+$csc-purple:  #7477b8;
+$csc-magenta: #ec008c;
+$csc-dark:    #231f20;
+
+// Just the Docs Variable Overrides
+$brand-color:         $csc-blue;
+$link-color:          $csc-blue;
+$body-text-color:     $csc-dark;
+$sidebar-color:       #f9f9f9; // Light grey sidebar for contrast
+$nav-child-link-color: $csc-purple;
+
+// Customize Callouts (The "Two-Box" System)
+$callout-note-color:    $csc-purple;
+$callout-warning-color: $csc-magenta;
+
+// Professional Code Styling
+$code-background-color: #f5f5f5;
+$highlight-color:       $csc-purple;
+
+// Ensure Hover states use the Interactive Purple
+a:hover {
+  color: $csc-purple !important;
+}
