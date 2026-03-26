@@ -84,3 +84,8 @@ iframe {
   margin: 1.5rem 0;
 }
 
+// 7. Logo Customization
+.site-logo {
+  max-height: 60px !important; // Increase this number to make it taller
+  width: auto !important;      // Keeps the aspect ratio correct
+}

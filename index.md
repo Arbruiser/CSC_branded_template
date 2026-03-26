@@ -1,6 +1,6 @@
 ---
 layout: home
-title: CSC Learning Materials
+title: Home page
 nav_order: 1
 ---
 

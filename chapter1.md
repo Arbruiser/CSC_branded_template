@@ -29,3 +29,4 @@ parent: Chapter 1 - Getting Started with LUMI  # Matches the title of the parent
 nav_order: 1               # Order within the chapter
 ---
 ```
+all pages other than `index.md` can have any name. 
