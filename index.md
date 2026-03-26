@@ -12,13 +12,13 @@ For a quick overview of the Markdown syntax elements refer to [Markdown Cheat Sh
 ---
 
 ## 📄 Add more pages
-1. **Create a New Page:** `index.md` is the 'landing page' of the website, do not rename it. You can easily add more pages by making new `.md` files in the root or in a subfolder. To remove chapter1 page, simply delete `chapter1.md`.
-2. **Add Front Matter:** Every page needs these lines at the top:
+1. **Create a new page:** `index.md` is the 'landing page' of the website, do not rename it. You can easily add more pages by making new `.md` files in the root or in a subfolder. To remove chapter1 page, simply delete `chapter1.md`.
+2. **Add front matter:** Every page needs these lines at the top:
 
 ```yaml
 ---
-layout: default
-title: Lesson 1 - Intro
+layout: home
+title: Home page
 nav_order: 1
 ---
 ```
@@ -58,7 +58,7 @@ print(f"The calculation result is: {result}")
 ---
 
 ## Embedding a YouTube video
-The video can be listed or unlisted (available through link only). To add a video, simply copy the **Embed code** from YouTube (Share > Embed) and paste it directly into the `.md` file. The template will automatically resize it.
+The video can be listed or unlisted (available through link only). To add a video, simply copy the **Embed code** from YouTube (Share > Embed) and paste it directly into the `.md` file.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aLae9Sd2oos?si=uJ_6ccR3ArrpVXqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -78,4 +78,5 @@ $$
 
 ## 🛠️ Need Help?
 If you have questions or suggestions on how to improve the template or instructions, please reach out to me on RocketChat: Artúr Vojt-Antal
+
 Instructions on how to structure your lessons, add images, and manage navigation can be found in our **[README](https://github.com/Arbruiser/CSC-branded-template/blob/main/README.md)**.

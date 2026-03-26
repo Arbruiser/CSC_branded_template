@@ -2,7 +2,6 @@
 layout: default
 title: Chapter 1 - Getting Started with LUMI
 nav_order: 2
-has_children: true
 ---
 
 # This is an example of an extra page
