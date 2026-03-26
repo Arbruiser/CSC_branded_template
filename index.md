@@ -6,6 +6,7 @@ nav_order: 1
 
 # CSC Learning Template
 This is the official template for creating clean, branded self-learning course sites. By using this template, you ensure that your training materials match the **CSC** and **LUMI AI Factory** visual identity automatically.
+
 For a quick overview of the Markdown syntax elements refer to [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
 ---
@@ -59,8 +60,3 @@ You can write beautiful LaTeX formulas easily:
 
 ## 🛠️ Need Help?
 Instructions on how to structure your lessons, add images, and manage navigation can be found in our **[README](https://github.com/Arbruiser/CSC-branded-template/blob/main/README.md)**.
-
-[Just the Docs Documentation]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/Arbruiser/CSC-branded-template/blob/main/README.md
-[use this template]: https://github.com/Arbruiser/CSC-branded-template/generate
