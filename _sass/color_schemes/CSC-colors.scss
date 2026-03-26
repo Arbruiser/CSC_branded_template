@@ -6,6 +6,7 @@ $csc-black:    #231f20;
 $slightly-grey: #f5f5f5;
 $white:       #ffffff;
 
+
 // 2. Just the Docs UI Variables (Overrides)
 // These change the search bar, sidebar links, and buttons
 $brand-color:         $csc-blue;
@@ -14,68 +15,60 @@ $body-text-color:     $csc-black;
 $sidebar-color:       $white;
 $nav-child-link-color: $csc-purple;
 
-// 3. Custom Callout Boxes (The "Two-Box" System)
-// This ensures {: .note } and {: .warning } work in index.md
-.note {
+
+// 3. Branded Callouts
+.note, .warning {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
   border: 1px solid $csc-black;
-  border-left: 6px solid $csc-purple; // LUMI Purple
   background-color: $slightly-grey;
-  
-  // This styles the blockquote inside the note
-  blockquote {
-    margin: 0;
-    border-left: none;
-    padding: 0;
-    color: inherit;
-  }
+  blockquote { margin: 0; border-left: none; padding: 0; color: inherit; }
+}
+.note { border-left: 6px solid $csc-purple; }
+.warning { border-left: 6px solid $csc-magenta; }
+
+
+// 4. Inline & Interactive Elements
+:not(pre) > code {
+  color: $csc-blue !important;
+  background-color: $slightly-grey;
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
-.warning {
-  margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  border: 1px solid $csc-black;
-  border-left: 6px solid $csc-magenta; // LUMI Magenta
-  background-color: $slightly-grey;
-
-  blockquote {
-    margin: 0;
-    border-left: none;
-    padding: 0;
-    color: inherit;
-  }
+a:hover {
+  color: $csc-purple !important;
+  text-decoration: underline;
 }
 
-// 4. Code & Technical Elements (Highest Specificity)
+
+// 5. Code & Technical Elements (Highest Specificity)
 div.highlighter-rouge {
-  position: relative !important;
   margin: 1.5rem 0 !important;
   width: fit-content !important;
   min-width: 450px !important;
   max-width: 100% !important;
-  background-color: #f9f9f9 !important; // Forces the grey background
+  background-color: #f9f9f9 !important;
   border: 1px solid $csc-purple !important;
   border-radius: 6px !important;
 
-  // This ensures the inner box doesn't block the grey background
   .highlight {
     background-color: transparent !important;
     padding: 1rem !important;
-    padding-right: 3.5rem !important;
+    padding-right: 3.5rem !important; // Safe zone for default button
     margin: 0 !important;
 
     pre, code {
       background-color: transparent !important;
+      color: $csc-black !important;
       border: none !important;
       margin: 0 !important;
-      color: $csc-black !important;
     }
   }
 }
 
 
-// 5. Video Styling 
+// 6. Video Styling 
 iframe {
   width: 100% !important;
   aspect-ratio: 16 / 9;
@@ -83,11 +76,4 @@ iframe {
   border-radius: 6px;
   margin: 1.5rem 0;
 }
-
-
-
-
-
-
-
 
