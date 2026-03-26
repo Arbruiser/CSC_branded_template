@@ -12,7 +12,7 @@ This is the official template for creating clean, branded self-learning course s
 ## 📄 Add more pages
 1. `index.md` is the 'landing page' of the website, do not rename it. You can easily add more pages by making new `.md` files in the root or in a subfolder.
 2. **Add Front Matter:** Every page needs this at the top:
-    ```
+    ```yaml
     layout: default
     title: Lesson 1 - Intro
     nav_order: 1
