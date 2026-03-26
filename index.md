@@ -61,8 +61,10 @@ print(f"The calculation result is: {result}")
 To add an image, place it in `assets/images/` and use this syntax:
 
 ![Description of the image](assets/images/spring-school.jpg)
+
+To add an image with a caption under the image use this simple HTML:
 <figure style="text-align: center;">
-  <img src="assets/images/spring-school.jpg">
+  <img src="assets/images/summer-school.jpg">
   <figcaption><i>Figure 1: Spring School on Computational Chemistry 2024.</i></figcaption>
 </figure>
 
