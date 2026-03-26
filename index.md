@@ -28,8 +28,8 @@ Where:
 - `title` is the name of the page;
 - `nav_order` defines the order in which the extra pages are listed on the left side.
 
-## 🎨 Branded Learning Elements
-This site is pre-configured with the LUMI AI Factory palette. You can use special "Callout Boxes" to highlight information for your students as follows:
+## 🎨 Branded Boxes
+You can use special "Callout Boxes" to highlight information for your students as follows:
 
 {: .note }
 > **LUMI Purple (Note)**
