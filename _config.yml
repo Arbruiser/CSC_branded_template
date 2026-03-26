@@ -17,3 +17,4 @@ gh_edit_view_mode: "tree"
 gh_edit_branch: "main"
 
 enable_copy_code_button: true
+has_math: true
