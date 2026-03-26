@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Lesson 1 - Intro
-nav_order: 1
+title: Chapter 1 - Intro
+nav_order: 2
 ---
 
-This is a test page

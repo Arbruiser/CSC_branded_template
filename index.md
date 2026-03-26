@@ -1,6 +1,7 @@
 ---
 layout: home
 title: CSC Learning Materials
+nav_order: 1
 ---
 
 # CSC Learning Template
@@ -8,8 +9,21 @@ This is the official template for creating clean, branded self-learning course s
 
 ---
 
+## 📄 Add more pages
+1. `index.md` is the 'landing page' of the website, please do not rename it. You can easily add more pages by making new `.md` files in the root or in a subfolder. You can use this to add structure and introduce chapters/lessons and not have everything on one page. 
+2. **Add Front Matter:** Every page needs this at the top:
+   ```yaml
+   ---
+   layout: default
+   title: Lesson 1 - Intro
+   nav_order: 1
+   ---
+Where: 
+- `layout` should be 'home' for `index.md` and 'default' for extra pages;
+- `nav_order` defines the order in which the extra pages are listed on the left side.
+
 ## 🎨 Branded Learning Elements
-This site is pre-configured with the LUMI AI Factory palette. You can use special "Callout Boxes" to highlight information for your students:
+This site is pre-configured with the LUMI AI Factory palette. You can use special "Callout Boxes" to highlight information for your students as follows:
 
 {: .note }
 > **LUMI Purple (Note)**
