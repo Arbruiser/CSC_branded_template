@@ -54,7 +54,9 @@ This site is pre-configured with the LUMI AI Factory palette. You can use specia
 You can write beautiful LaTeX formulas easily:
 
 - **Inline math:** This is an inline formula: $E = mc^2$
-- **Block math:** $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
+- **Block math:** 
+
+$$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
 
 ---
 
