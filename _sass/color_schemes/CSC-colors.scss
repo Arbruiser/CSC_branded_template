@@ -49,27 +49,32 @@ a:hover {
 }
 
 
-// 5. Code & Technical Elements (Highest Specificity)
+// 4. Code & Technical Elements (Dark Theme)
 div.highlighter-rouge {
+  position: relative !important;
   margin: 1.5rem 0 !important;
   width: fit-content !important;
   min-width: 450px !important;
   max-width: 100% !important;
-  background-color: #f0f5f8 !important;
-  border: 1px solid $csc-purple !important;
+  
+  // DARK THEME: Deep CSC Blue/Black
+  background-color: #1a2328 !important; 
+  border: 1px solid $csc-black !important;
   border-radius: 6px !important;
 
   .highlight {
     background-color: transparent !important;
     padding: 1rem !important;
-    padding-right: 3.5rem !important; // Safe zone for default button
+    padding-right: 3.5rem !important;
     margin: 0 !important;
 
     pre, code {
       background-color: transparent !important;
-      color: $csc-black !important;
       border: none !important;
       margin: 0 !important;
+      
+      // LIGHT TEXT: Off-white for better readability
+      color: #e6edf3 !important; 
     }
   }
 }
