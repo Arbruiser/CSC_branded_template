@@ -1,7 +1,6 @@
 ---
 layout: home
 title: CSC Learning Materials
-nav_exclude: true
 ---
 
 # CSC Learning Template

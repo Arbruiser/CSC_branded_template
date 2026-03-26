@@ -2,14 +2,15 @@
 $csc-blue:    #2c6789;
 $csc-purple:  #7477b8;
 $csc-magenta: #ec008c;
-$csc-dark:    #231f20;
+$csc-black:    #231f20;
+$slightly-grey: #f5f5f5;
 $white:       #ffffff;
 
 // 2. Just the Docs UI Variables (Overrides)
 // These change the search bar, sidebar links, and buttons
 $brand-color:         $csc-blue;
 $link-color:          $csc-blue;
-$body-text-color:     $csc-dark;
+$body-text-color:     $csc-black;
 $sidebar-color:       $white;
 $nav-child-link-color: $csc-purple;
 
@@ -18,9 +19,9 @@ $nav-child-link-color: $csc-purple;
 .note {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
-  border: 1px solid $csc-dark;
+  border: 1px solid $csc-black;
   border-left: 6px solid $csc-purple; // LUMI Purple
-  background-color: $white;
+  background-color: $slightly-grey;
   
   // This styles the blockquote inside the note
   blockquote {
@@ -34,9 +35,9 @@ $nav-child-link-color: $csc-purple;
 .warning {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
-  border: 1px solid $csc-dark;
+  border: 1px solid $csc-black;
   border-left: 6px solid $csc-magenta; // LUMI Magenta
-  background-color: $white;
+  background-color: $slightly-grey;
 
   blockquote {
     margin: 0;
@@ -49,7 +50,7 @@ $nav-child-link-color: $csc-purple;
 // 4. Code & Technical Elements
 code {
   color: $csc-blue !important;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; // ever so slightly grey
   padding: 2px 4px;
   border-radius: 3px;
 }
