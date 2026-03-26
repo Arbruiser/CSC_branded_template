@@ -64,7 +64,11 @@ $nav-child-link-color: $csc-purple;
   border-radius: 6px;
   margin: 1.5rem 0;
   padding: 1rem;
-  width: fit-content;
+  position: relative;
+  width: fit-content;      
+  min-width: 450px;        // Space for the button and short code
+  max-width: 100%;
+  padding-right: 3rem;  
 
   // This clears the styling from the tags INSIDE the highlight box
   pre {
