@@ -58,35 +58,56 @@ div.highlighter-rouge {
   }
 }
 
-// 7. Visual Structure (The "CSC Ambient Glow" v2)
+// 7. Visual Structure (The "Static CSC Glow")
 
-html {
-  // We put the background on the 'html' tag so it spans the entire browser window
-  // Radial gradients at the specific corners match the logo's logic perfectly.
+// 1. Clear default backgrounds so our glow can shine through
+html, body {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+// 2. Create a fixed "canvas" that exactly matches the screen size
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; // Puts the glow behind all your content
   background: 
-    radial-gradient(circle at 0% 100%, rgba($csc-blue, 0.08), transparent 40%),    // Blue: Bottom-Left
-    radial-gradient(circle at 100% 0%, rgba($csc-magenta, 0.06), transparent 40%), // Magenta: Top-Right
-    #ffffff !important;
-  background-attachment: fixed;
-  min-height: 100vh;
+    radial-gradient(circle at 0% 100%, rgba($csc-blue, 0.08), transparent 50%),    // Blue: Bottom-Left
+    radial-gradient(circle at 100% 0%, rgba($csc-magenta, 0.06), transparent 50%), // Magenta: Top-Right
+    #ffffff; // Solid white base in the middle
 }
 
-body {
-  background: transparent !important; // Let the HTML background shine through
-}
-
+// 3. Make the Sidebar "Frosted Glass"
 .side-bar {
-  // Making the sidebar transparent allows the blue glow from the bottom-left to be visible
-  background-color: transparent !important; 
+  background-color: rgba(255, 255, 255, 0.7) !important; 
+  backdrop-filter: blur(10px); 
   border-right: 1px solid rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px); // Adds a high-end "frosted glass" look to the sidebar
 }
 
-.site-header {
+// 4. Force ALL headers and content wrappers to be transparent
+// (.main-header is what was blocking the top right!)
+.site-header, .main-header, .main-content-wrap, .main-content {
   background-color: transparent !important;
+  background: transparent !important;
+  border-bottom: none !important; // Removes any faint lines under the top bar
 }
 
-// Ensure the main content area doesn't have a solid white background blocking the glow
-.main-content-wrap, .main-content {
-  background-color: transparent !important;
+// 5. Top-right "Pill" Button (For the CSC Website link)
+.aux-nav-list-item a {
+  background-color: rgba($csc-blue, 0.05) !important;
+  padding: 6px 15px !important;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid rgba($csc-blue, 0.1);
+
+  &:hover {
+    background-color: $csc-blue !important;
+    color: $white !important;
+  }
 }
