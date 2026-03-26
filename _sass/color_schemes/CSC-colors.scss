@@ -58,43 +58,35 @@ div.highlighter-rouge {
   }
 }
 
-// 7. Style with light magenta in top right fading into blue in bottom left 
+// 7. Visual Structure (The "Static CSC Glow")
 
-// 1. Clear default backgrounds
-html, body {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-// 2. The Fixed Canvas
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; 
+// 1. Apply the static glow to the absolute base of the website
+html {
   background: 
-    // INCREASED BLUE: Opacity bumped to 0.25 (25%), spread pushed to 75%
     radial-gradient(circle at 0% 100%, rgba($csc-blue, 0.25), transparent 75%),    
-    radial-gradient(circle at 100% 0%, rgba($csc-magenta, 0.06), transparent 50%), 
-    #ffffff; 
+    radial-gradient(circle at 100% 0%, rgba($csc-magenta, 0.08), transparent 50%), 
+    #ffffff !important;
+  background-attachment: fixed !important;
 }
 
-// 3. Make the Sidebar "Frosted Glass"
+// 2. Force ALL structural wrappers to be completely transparent
+body, .main, .main-content, .main-content-wrap, .main-header {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+// 3. The Sidebar "Frosted Glass"
 .side-bar {
-  // REDUCED WHITE: Dropped to 30% so the blue can actually shine through
   background-color: rgba(255, 255, 255, 0.3) !important; 
-  backdrop-filter: blur(12px); // Increased blur to keep text readable
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px); 
+  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
 
-// 4. Force transparent headers
-.site-header, .main-header, .main-content-wrap, .main-content {
+// 4. THE FIX: Strip the solid white from the sidebar's inner elements
+.site-header, .site-title, .site-nav, .site-footer, .search {
   background-color: transparent !important;
   background: transparent !important;
-  border-bottom: none !important;
 }
 
 // 5. Top-right "Pill" Button
