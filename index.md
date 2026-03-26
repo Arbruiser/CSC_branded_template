@@ -61,4 +61,5 @@ $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
 ---
 
 ## 🛠️ Need Help?
+If you have questions or suggestions on how to improve the template or instructions, please reach out to me on RocketChat: Artúr Vojt-Antal
 Instructions on how to structure your lessons, add images, and manage navigation can be found in our **[README](https://github.com/Arbruiser/CSC-branded-template/blob/main/README.md)**.
