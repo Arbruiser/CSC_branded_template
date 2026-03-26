@@ -1,20 +1,22 @@
 title: CSC Learning Materials
 description: Official training documentation for CSC staff and partners.
 theme: just-the-docs
-
 logo: "CSC_logo.svg"
 color_scheme: CSC-colors
 
 # Navigation & Search
 search_enabled: false
 heading_anchors: true      # Makes it easy for people to link to specific sections
+
+# Link(s) in the top right
 aux_links:
   "CSC Website": "https://research.csc.fi/"
 
-# Points to the correct fork automatically!
+# GitHub Integration
 gh_edit_repository: "https://github.com/{{ site.github.repository_nwo }}"
 gh_edit_view_mode: "tree"
 gh_edit_branch: "main"
 
+# Technical Features
 enable_copy_code_button: true
 math: mathjax # use: https://just-the-docs.github.io/just-the-docs-tests/components/math/mathjax/tests/
