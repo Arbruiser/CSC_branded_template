@@ -62,7 +62,6 @@ div.highlighter-rouge {
 
 // 7. Visual Structure (The "CSC Asymptote" Corners)
 
-// 1. Create a fixed canvas for the corner branding
 html::before {
   content: "";
   position: fixed;
@@ -73,39 +72,39 @@ html::before {
   z-index: -999;
   background-color: #ffffff;
   
-  // We draw the swooping lines using Inline SVG directly in the CSS!
+  // We use exact Vector Paths (M = Move, L = Line, Q = Quadratic Curve, Z = Close)
   background-image: 
-    /* TOP RIGHT: Blue Asymptote */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3Cpath d='M 0,0 Q 340,15 350,350 Q 315,15 0,25 Z' fill='%232c6789' opacity='0.35'/%3E%3C/svg%3E"),
-    /* BOTTOM LEFT: Magenta Asymptote */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3Cpath d='M 0,0 Q 15,340 350,350 Q 15,315 25,0 Z' fill='%23ec008c' opacity='0.35'/%3E%3C/svg%3E");
+    /* TOP RIGHT: Magenta Asymptote (Matches Logo) */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' width='400' height='400'%3E%3Cpath d='M 400,0 L 0,0 Q 380,20 400,400 Z' fill='%23ec008c' opacity='0.15'/%3E%3C/svg%3E"),
+    /* BOTTOM LEFT: CSC Teal Asymptote (Matches Logo) */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' width='400' height='400'%3E%3Cpath d='M 0,400 L 400,400 Q 20,380 0,0 Z' fill='%232c6789' opacity='0.15'/%3E%3C/svg%3E");
     
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
 }
 
-// 2. Strip ALL theme backgrounds completely
+// Strip ALL theme backgrounds completely so the corners show clearly
 html, body, .main, .main-content, .main-content-wrap, .main-header {
   background: transparent !important;
   background-color: transparent !important;
   border-bottom: none !important;
 }
 
-// 3. The Sidebar (Kept glassy so the bottom-left magenta line shows through)
+// The Sidebar (Glassy, so the bottom-left teal shape shows through beautifully)
 .side-bar {
   background: transparent !important; 
   background-color: rgba(255, 255, 255, 0.4) !important; 
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(8px); 
   border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
 
-// 4. Inner Sidebar Elements (Must be transparent)
+// Inner Sidebar Elements (Must be transparent)
 .site-header, .site-title, .site-nav, .site-footer, .search {
   background: transparent !important;
   background-color: transparent !important;
 }
 
-// 5. Top-right "Pill" Button
+// Top-right "Pill" Button
 .aux-nav-list-item a {
   background-color: rgba($csc-blue, 0.05) !important;
   padding: 6px 15px !important;
