@@ -44,16 +44,23 @@ This site is pre-configured with the LUMI AI Factory palette. You can use specia
 ---
 
 ## 💻 Technical Content
-* **Inline Commands:** Use backticks to show code like `srun --pty bash`.
-* **Code blocks** Use triple backticks to show multiline blocks of code. You must have an empty line before and after the block. When user hovers over it, the copy button appears.
 * **Sidebar Links:** Navigation links will turn Purple when you hover over them.
+* **Inline Commands:** Use backticks to show code like `srun --pty bash`.
+* **Code blocks** Use triple backticks to show multiline blocks of code. When user hovers over it, the copy button appears. You must have an empty line before and after the block as such: 
+
+```python
+import math
+
+result = math.sqrt(25)
+print(f"The calculation result is: {result}")
+```
 
 ---
 
 ## Embedding a YouTube video
-
+The video can be listed or unlisted (available through link only). You can embed a video with this simple HTML code where you only need to change the link:
 <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/watch?v=aLae9Sd2oos" allowfullscreen></iframe>
 </div>
 
 
