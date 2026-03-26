@@ -15,3 +15,5 @@ aux_links:
 gh_edit_repository: "https://github.com/{{ site.github.repository_nwo }}"
 gh_edit_view_mode: "tree"
 gh_edit_branch: "main"
+
+enable_copy_code_button: true
