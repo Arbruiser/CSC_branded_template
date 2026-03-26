@@ -51,9 +51,9 @@ This site is pre-configured with the LUMI AI Factory palette. You can use specia
 ---
 
 ## 🧪 Mathematical Formulas
-You can write beautiful LaTeX formulas easily:
+You can write beautiful LaTeX formulas easily using [MarhJax](https://just-the-docs.github.io/just-the-docs-tests/components/math/mathjax/tests/):
 
-- **Inline math:** This is an inline formula: $E = mc^2$
+- **Inline math:** $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
 - **Block math:** $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
 
 ---
