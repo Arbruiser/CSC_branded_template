@@ -62,6 +62,12 @@ The video can be listed or unlisted (available through link only). To add a vide
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aLae9Sd2oos?si=uJ_6ccR3ArrpVXqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+OR LIKE THIS:
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/aLae9Sd2oos?si=uJ_6ccR3ArrpVXqT" allowfullscreen></iframe>
+</div>
+
 
 ---
 
