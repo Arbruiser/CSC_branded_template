@@ -45,13 +45,22 @@ This site is pre-configured with the LUMI AI Factory palette. You can use specia
 
 ## 💻 Technical Content
 * **Inline Commands:** Use backticks to show code like `srun --pty bash`.
-* **Code blocks** Use triple backticks to show multiline blocks of code. You must have an empty line before and after the block.
+* **Code blocks** Use triple backticks to show multiline blocks of code. You must have an empty line before and after the block. When user hovers over it, the copy button appears.
 * **Sidebar Links:** Navigation links will turn Purple when you hover over them.
 
 ---
 
+## Embedding a YouTube video
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+</div>
+
+
+---
+
 ## 🧪 Mathematical Formulas
-You can write beautiful LaTeX formulas easily using [MarhJax](https://just-the-docs.github.io/just-the-docs-tests/components/math/mathjax/tests/):
+You can write beautiful LaTeX formulas easily using [MathJax](https://just-the-docs.github.io/just-the-docs-tests/components/math/mathjax/tests/):
 
 - **Inline math:** $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
 - **Block math:** 
