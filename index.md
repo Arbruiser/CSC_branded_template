@@ -60,7 +60,7 @@ print(f"The calculation result is: {result}")
 ## Embedding a picture
 To add an image, place it in `assets/images/` and use this syntax:
 
-![Description of the image](assets/images/spring-school.png)
+![Description of the image](assets/images/spring-school.jpg)
 
 ---
 
