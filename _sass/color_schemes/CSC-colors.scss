@@ -48,6 +48,8 @@ a:hover {
 div.highlighter-rouge {
   margin: 1.5rem 0 !important;
   width: fit-content !important;
+  min-width: min(100%, 450px) !important;
+  max-width: 100% !important;
   background-color: $very-light-blue !important;
   border: 1px solid $csc-light-blue !important;
   border-radius: 6px !important;
