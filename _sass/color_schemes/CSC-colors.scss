@@ -61,11 +61,24 @@ div.highlighter-rouge {
   }
 }
 
-// 6. Reposition Aux Links to the Left
+// 6. Top buttons
 .aux-nav {
   order: -1;                     // Moves it to the left
 }
 
+.aux-nav-list-item a {
+  background-color: rgba($csc-blue, 0.05) !important;
+  padding: 6px 15px !important;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid rgba($csc-blue, 0.1);
+
+  &:hover {
+    background-color: $csc-blue !important;
+    color: $white !important;
+  }
+}
 
 // 7. The "CSC Asymptote" Corners
 
