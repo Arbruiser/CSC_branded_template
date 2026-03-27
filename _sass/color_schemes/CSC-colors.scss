@@ -87,7 +87,7 @@ html::before {
   bottom: 0; 
   left: 0;
   right: 0;
-  background-color: #ffffff;
+  z-index: 9999;
   background-size: min(10vw, 150px), min(10vw, 150px);
   
   // Scaled down to 350px and set to 100% opacity (solid)
