@@ -14,7 +14,6 @@ $white:       #ffffff;
 $brand-color:         $csc-blue;
 $link-color:          $csc-blue;
 $body-text-color:     $csc-black;
-$sidebar-color:       $csc-light-light-blue;
 $nav-child-link-color: $csc-red;
 
 
@@ -88,7 +87,6 @@ html::before {
 
 // Strip ALL theme backgrounds completely 
 html, body, .main, .main-content, .main-content-wrap, .main-header {
-  background: transparent !important;
   background-color: transparent !important;
   border-bottom: none !important;
 }
@@ -101,7 +99,6 @@ html, body, .main, .main-content, .main-content-wrap, .main-header {
 
 // Inner Sidebar Elements 
 .site-header, .site-title, .site-nav, .site-footer, .search {
-  background: transparent !important;
   background-color: transparent !important;
 }
 
