@@ -76,12 +76,10 @@ div.highlighter-rouge {
 
   &:hover {
     background-color: $csc-green !important;
-    color: $white !important;
   }
 }
 
-// 7. The "CSC Asymptote" Corners
-
+// 7. The "CSC Asymptote"
 html::before {
   content: "";
   position: fixed;
