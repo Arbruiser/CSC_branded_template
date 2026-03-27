@@ -1,12 +1,12 @@
 // 1. CSC & LUMI Brand Palette
 $csc-blue:    #02284F;
 $csc-light-blue: #ABCFEF; 
-$csc-light-light-blue: #C8E0F5;
+$very-light-blue: #eef7ff;
 $csc-green: #005260;
 $csc-light-green:  #B0DCBA;
-$csc-light-light-green: #DBEEE0;
+$very-light-green: #f3fff6;
 $csc-red: #830051;
-$csc-light-light-red: #F8EAE9;
+$very-light-red: #fdf6f6;
 $csc-black:    #002930;
 $csc-slightly-grey: #EFF0F1;
 $white:       #ffffff;
@@ -25,8 +25,8 @@ $nav-child-link-color: $csc-red;
   padding: 1rem 1.5rem;
   blockquote { margin: 0; border-left: none; padding: 0; color: inherit; }
 }
-.note { border: 1px solid $csc-green; border-left: 6px solid $csc-light-green; background-color: $csc-light-light-green;}
-.warning { border: 1px solid $csc-red; border-left: 6px solid $csc-red; background-color: $csc-light-light-red;}
+.note { border: 1px solid $csc-green; border-left: 6px solid $csc-light-green; background-color: $very-light-green;}
+.warning { border: 1px solid $csc-red; border-left: 6px solid $csc-red; background-color: $very-light-red;}
 
 
 // 4. Interactive Elements
@@ -49,7 +49,7 @@ div.highlighter-rouge {
   width: fit-content !important;
   min-width: 450px !important;
   max-width: 100% !important;
-  background-color: $csc-light-light-blue !important;
+  background-color: $very-light-blue !important;
   border: 1px solid $csc-light-green !important;
   border-radius: 6px !important;
 
