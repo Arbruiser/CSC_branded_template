@@ -17,7 +17,7 @@ $brand-color:         $csc-blue;
 $link-color:          $csc-blue;
 $body-text-color:     $csc-black;
 $nav-child-link-color: $csc-red;
-
+$sidebar-color: $csc-light-blue;
 
 // 3. Branded Callouts (Notes & Warnings)
 .note, .warning {
@@ -101,10 +101,4 @@ html::before {
     
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
-}
-
-// The Sidebar (Crystal clear background)
-.side-bar {
-  background-color: $very-light-blue !important;
-  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
