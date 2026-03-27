@@ -108,7 +108,7 @@ html::before {
   border: 1px solid rgba($csc-blue, 0.1);
 
   &:hover {
-    background-color: $csc-blue !important;
+    background-color: $csc-red !important;
     color: $white !important;
     text-decoration: none !important;
   }
