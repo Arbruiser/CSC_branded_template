@@ -101,3 +101,15 @@ html::before {
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
 }
+
+// 8. Layout Transparency Fix
+.side-bar {
+  // This keeps the "blue-ish" tint but lets the red asymptote show through
+  background-color: rgba(245, 247, 249, 0.85) !important; 
+  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+// Make the main content areas transparent so the white background (and SVG) shows
+.main, .main-content, .main-header, .site-header {
+  background-color: transparent !important;
+}
