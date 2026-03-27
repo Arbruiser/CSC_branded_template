@@ -6,6 +6,7 @@ $csc-green: #005260;
 $csc-light-green:  #B0DCBA;
 $csc-light-light-green: #DBEEE0;
 $csc-red: #830051;
+$csc-light-light-red: #F8EAE9;
 $csc-black:    #002930;
 $csc-slightly-grey: #EFF0F1;
 $white:       #ffffff;
@@ -25,7 +26,7 @@ $nav-child-link-color: $csc-red;
   blockquote { margin: 0; border-left: none; padding: 0; color: inherit; }
 }
 .note { border: 1px solid $csc-green; border-left: 6px solid $csc-light-green; background-color: $csc-light-light-green;}
-.warning { border: 1px solid $csc-red; border-left: 6px solid $csc-red; background-color: #fdf2f7;}
+.warning { border: 1px solid $csc-red; border-left: 6px solid $csc-red; background-color: $csc-light-light-red;}
 
 
 // 4. Interactive Elements
