@@ -32,19 +32,19 @@ Where:
 You can use special "Callout Boxes" to highlight information for your students as follows:
 
 {: .note }
-> **LUMI Purple (Note)**
+> **CSC Green (Note)**
 >
 > Use this for additional context or general helpful information.
 
 {: .warning }
-> **LUMI Magenta (Warning)**
+> **CSC Red (Warning)**
 >
 > Use this for critical warnings, security notices, or common errors to avoid.
 
 ---
 
 ## 💻 Technical Content
-* **Sidebar Links:** Navigation links will turn Purple when you hover over them.
+* **Sidebar Links:** Navigation links will turn CSC-Red when you hover over them.
 * **Inline Commands:** Use backticks to show code like `srun --pty bash`.
 * **Code blocks** Use triple backticks to show multiline blocks of code. When user hovers over it, the copy button appears. You must have an empty line before and after the block as such: 
 
