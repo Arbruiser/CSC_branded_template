@@ -63,7 +63,7 @@ div.highlighter-rouge {
 
 // 6. Top buttons
 .aux-nav {
-  order: -1;                     // Moves it to the left
+  order: -1; // Moves it to the left
 }
 
 .aux-nav-list-item a {
@@ -100,10 +100,4 @@ html::before {
     
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
-}
-
-// The Sidebar (Crystal clear background)
-.side-bar {
-  background-color: transparent !important;
-  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
