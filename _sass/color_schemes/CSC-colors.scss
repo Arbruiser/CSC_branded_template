@@ -76,6 +76,10 @@ div.highlighter-rouge {
   font-size: 13px;
   font-weight: 500;
   border: 1px solid $csc-light-blue !important;
+
+  &:hover {
+    background-color: #748ca1 !important;
+  }
 }
 
 
