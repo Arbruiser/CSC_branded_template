@@ -108,10 +108,10 @@ html::before {
   
   // Scaled down to 350px and set to 100% opacity (solid)
 background-image: 
-    /* TOP RIGHT: Magenta Asymptote */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 350' width='350' height='350'%3E%3Cpath fill='%23830051' d='M 350,0 L 0,0 C 350,44 350,0 350,350 Z'/%3E%3C/svg%3E"),
-    /* BOTTOM LEFT: Green Asymptote */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 350' width='350' height='350'%3E%3Cpath fill='%23005260' d='M 0,350 L 350,350 C 0,306 0,350 0,0 Z'/%3E%3C/svg%3E");
+    /* TOP RIGHT: Green Asymptote */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 350' width='350' height='350'%3E%3Cpath fill='%23005260' d='M 350,0 L 0,0 C 350,44 350,0 350,350 Z'/%3E%3C/svg%3E"),
+    /* BOTTOM LEFT: Magenta Asymptote */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 350' width='350' height='350'%3E%3Cpath fill='%23830051' d='M 0,350 L 350,350 C 0,306 0,350 0,0 Z'/%3E%3C/svg%3E");
   
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
