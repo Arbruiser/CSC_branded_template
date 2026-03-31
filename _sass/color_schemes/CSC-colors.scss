@@ -70,6 +70,8 @@ div.highlighter-rouge {
 
 .aux-nav-list-item a {
   background-color: rgba($csc-blue, 0.05) !important;
+  background-image: none !important; /* Kills the default theme gradient */
+  box-shadow: none !important; /* Removes any default theme drop-shadows */
   padding: 6px 15px !important;
   border-radius: 20px;
   font-size: 13px;
@@ -78,6 +80,7 @@ div.highlighter-rouge {
 
   &:hover {
     background-color: $csc-green !important;
+    background-image: none !important; /* Kills the default theme gradient */
   }
 }
 
