@@ -79,7 +79,7 @@ div.highlighter-rouge {
   border: 1px solid $csc-blue !important;
 
   &:hover {
-    background-color: $light-blue !important;
+    background-color: transparent !important;
     background-image: none !important; /* Kills the default theme gradient */
   }
 }
