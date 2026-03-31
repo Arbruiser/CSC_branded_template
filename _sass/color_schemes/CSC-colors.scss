@@ -58,6 +58,8 @@ div.highlighter-rouge {
     padding: 1rem !important;
     padding-right: 3.5rem !important; // Safe zone for default button
     margin: 0 !important;
+  
+    pre {border: none !important; /* Kills any border on the pre tag itself */}
   }
 }
 
